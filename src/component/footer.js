@@ -2,7 +2,7 @@
 function Footer(props) {
   return (
     <>
-      <h2>{props.author}</h2>
+      <h2>Author: {props.author}</h2>
     </>
   )
 }
