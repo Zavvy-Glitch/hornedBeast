@@ -30,7 +30,7 @@ class SelectedBeast extends Component {
             </Card>
           </Modal.Body>
           <Modal.Footer>
-            <h3>{this.props.description}</h3>
+            <p>{this.props.description}</p>
           </Modal.Footer>
         </Modal>
       </div>
