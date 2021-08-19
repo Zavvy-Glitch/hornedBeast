@@ -15,16 +15,27 @@ class App extends Component {
     };
   }
 
-  setChangeHorns = (val) =>
-    this.setState({
-      changeHorns: parseInt(val),
-    });
+  setChangeHorns = (val) => {
+    if (val === "none") {
+      this.setState({
+        changeHorns: val,
+      });
+    } else {
+      this.setState({
+        changeHorns: parseInt(val),
+      });
+    }
+  };
 
   filter = () => {
-    const filteringHorns = Data.filter(
-      (beast) => beast.horns === this.state.changeHorns
-    );
-    this.setState({ data: filteringHorns });
+    if (this.state.changeHorns === "none") {
+      this.setState({ data: Data });
+    } else {
+      const filteringHorns = Data.filter(
+        (beast) => beast.horns === this.state.changeHorns
+      );
+      this.setState({ data: filteringHorns });
+    }
   };
 
   render() {
