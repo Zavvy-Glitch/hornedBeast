@@ -39,6 +39,7 @@ class HornedBeasts extends Component {
           </Card.Title>
           <Card.Img
             variant="top"
+            onClick={this.handleImageClick}
             src={this.props.beast.image_url}
             alt={this.props.beast.title}
             width="25%"
