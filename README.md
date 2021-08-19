@@ -45,3 +45,19 @@
 - Finish time: 5:22pm
 
 - Actual time needed to complete: 1hr 37mins
+
+## Lab 03
+
+### Feature 4
+
+- Number and name of feature: Display a Modal
+
+- Estimate of time needed to complete: 2 hours
+
+- Start time: 2:00
+
+- Finish time: 5:16pm
+
+- Actual time needed to complete: 3hr 16mins
+
+  - Modal provided with React-boostrap. Creation in collaboration with Patrick Laurion / Kyle Cohen / Chance Harmon
