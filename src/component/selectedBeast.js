@@ -24,7 +24,6 @@ class SelectedBeast extends Component {
                   alt="heartImage"
                   width="20px"
                   height="auto"
-                  onClick={this.updateHearts}
                 />
               </span>
             </Card>
