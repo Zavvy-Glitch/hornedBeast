@@ -71,7 +71,9 @@ class HornedBeasts extends Component {
               favorites={this.state.favorites}
               updateHearts={this.updateHearts}
             />
-            <Button onClick={this.handleImageClick}>Click Me!</Button>
+            <Button onClick={this.handleImageClick} variant="secondary" >
+              Click Me!
+            </Button>
           </Card.Footer>
         </Card>
       </>

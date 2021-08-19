@@ -4,6 +4,7 @@ import Footer from "./component/footer";
 import Main from "./component/main";
 import Data from "./data.json";
 import { Component } from "react";
+import Forms from "./component/form";
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +24,6 @@ class App extends Component {
     const filteringHorns = Data.filter(
       (beast) => beast.horns === this.state.changeHorns
     );
-    console.log(filteringHorns);
     this.setState({ data: filteringHorns });
   };
 
@@ -31,6 +31,7 @@ class App extends Component {
     return (
       <div className="app">
         <Header title="Horned Beasts" />
+        <Forms changeHorns={this.setChangeHorns} filter={this.filter} />
         <Main data={this.state.data} />
         <Footer author="Tray Chea" />
       </div>

@@ -11,7 +11,7 @@ class Main extends Component {
   render() {
     return (
       <>
-        <div id="cardsArray">
+        <div id="cardedBeast">
           <Container>
             <Row md={4} className="g-4">
               {this.props.data.map((currentBeast) => {

@@ -14,11 +14,7 @@ class SelectedBeast extends Component {
             <Button onClick={this.props.handleImageClick}>X</Button>
           </Modal.Header>
           <Modal.Body>
-            <Card
-             bg="dark"
-             border="dark"
-             text="light"
-             >
+            <Card bg="dark" border="dark" text="light">
               <img src={this.props.image} alt=""></img>
               <span>
                 <p>Number of Horns: {this.props.numberOfHorns}</p>
@@ -28,13 +24,13 @@ class SelectedBeast extends Component {
                   alt="heartImage"
                   width="20px"
                   height="auto"
-                  onclick={this.updateHearts}
+                  onClick={this.updateHearts}
                 />
               </span>
             </Card>
           </Modal.Body>
           <Modal.Footer>
-            <h3>{this.props.description}</h3>
+            <p>{this.props.description}</p>
           </Modal.Footer>
         </Modal>
       </div>
